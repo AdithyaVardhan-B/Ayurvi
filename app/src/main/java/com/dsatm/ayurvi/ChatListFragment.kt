@@ -43,7 +43,7 @@ class ChatListFragment : Fragment() {
 
                 // Inject previously stored HTML into the chatbox class
                 val storedHtml = getStoredChatHtml()
-                if (storedHtml.isNotEmpty()) {
+                if (storedHtml.isNotEmpty() && storedHtml!="null") {
                     view.evaluateJavascript(
                         "document.querySelector('.chatbox').innerHTML = `$storedHtml`;",
                         null
@@ -66,6 +66,8 @@ class ChatListFragment : Fragment() {
             object : OnBackPressedCallback(true) {
                 override fun handleOnBackPressed() {
                     saveChatHtml()
+                    isEnabled = false // Disable this callback
+                    requireActivity().onBackPressedDispatcher.onBackPressed()
                 }
             }
         )

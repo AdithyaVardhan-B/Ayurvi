@@ -57,7 +57,7 @@ class ProfileFragment : Fragment() {
         avatartv = view.findViewById<ImageView>(R.id.avatartv)
         nam = view.findViewById<TextView>(R.id.nametv)
         email = view.findViewById<TextView>(R.id.emailtv)
-        fab = view.findViewById<FloatingActionButton>(R.id.fab)
+        //fab = view.findViewById<FloatingActionButton>(R.id.fab)
         pd = ProgressDialog(activity)
         pd!!.setCanceledOnTouchOutside(false)
         val query = databaseReference!!.orderByChild("email").equalTo(
@@ -103,14 +103,14 @@ class ProfileFragment : Fragment() {
 
 
         // On click we will open EditProfileActivity
-        fab?.setOnClickListener {
-            startActivity(
-                Intent(
-                    activity,
-                    EditProfilePage::class.java
-                )
-            )
-        }
+//        fab?.setOnClickListener {
+//            startActivity(
+//                Intent(
+//                    activity,
+//                    EditProfilePage::class.java
+//                )
+//            )
+//        }
         return view
     }
 

@@ -69,8 +69,8 @@ class RegistrationActivity : AppCompatActivity() {
             if (task.isSuccessful) {
                 progressDialog!!.dismiss()
                 val user = mAuth!!.currentUser
-                val email = user!!.email
-                val uid = user.uid
+                val email = emaill
+                val uid = user!!.uid
                 val hashMap = HashMap<Any, String?>()
                 hashMap["email"] = email
                 hashMap["uid"] = uid

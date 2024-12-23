@@ -49,15 +49,15 @@ class DashboardActivity : AppCompatActivity() {
 //                    return@OnNavigationItemSelectedListener true
 //                }
 
-//                R.id.nav_profile -> {
-//                    supportActionBar?.show()
-//                    actionBar!!.setTitle("Profile")
-//                    val fragment1 = ProfileFragment()
-//                    val fragmentTransaction1 = supportFragmentManager.beginTransaction()
-//                    fragmentTransaction1.replace(R.id.content, fragment1)
-//                    fragmentTransaction1.commit()
-//                    return@OnNavigationItemSelectedListener true
-//                }
+                R.id.nav_profile -> {
+                    supportActionBar?.show()
+                    actionBar!!.setTitle("Profile")
+                    val fragment1 = ProfileFragment()
+                    val fragmentTransaction1 = supportFragmentManager.beginTransaction()
+                    fragmentTransaction1.replace(R.id.content, fragment1)
+                    fragmentTransaction1.commit()
+                    return@OnNavigationItemSelectedListener true
+                }
 
 //                R.id.nav_users -> {
 //                    supportActionBar?.show()
@@ -78,15 +78,15 @@ class DashboardActivity : AppCompatActivity() {
                     return@OnNavigationItemSelectedListener true
                 }
 
-//                R.id.nav_addblogs -> {
-//                    supportActionBar?.show()
-//                    actionBar!!.setTitle("Create")
-//                    val fragment4 = AddBlogsFragment()
-//                    val fragmentTransaction4 = supportFragmentManager.beginTransaction()
-//                    fragmentTransaction4.replace(R.id.content, fragment4, "")
-//                    fragmentTransaction4.commit()
-//                    return@OnNavigationItemSelectedListener true
-//                }
+                R.id.nav_addblogs -> {
+                    supportActionBar?.show()
+                    actionBar!!.setTitle("Reminders")
+                    val fragment4 = AddBlogsFragment()
+                    val fragmentTransaction4 = supportFragmentManager.beginTransaction()
+                    fragmentTransaction4.replace(R.id.content, fragment4, "")
+                    fragmentTransaction4.commit()
+                    return@OnNavigationItemSelectedListener true
+                }
             }
             false
         }

@@ -7,18 +7,18 @@
     <item
         android:id="@+id/nav_users"
         android:icon="@drawable/ic_users"
-        android:title="Users" />
+        android:title="Users" /-->
     <item
         android:id="@+id/nav_addblogs"
         android:icon="@drawable/ic_add"
-        android:title="Create" /-->
+        android:title="Reminders" />
     <item
         android:id="@+id/nav_chat"
         android:icon="@drawable/ic_chat"
         android:title="ChatBot" />
-    <!--item
+    <item
         android:id="@+id/nav_profile"
         android:icon="@drawable/ic_account"
-        android:title="Profile" /-->
+        android:title="Profile" />
 
 </menu>
